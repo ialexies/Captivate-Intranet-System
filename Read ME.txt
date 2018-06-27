@@ -1,0 +1,3 @@
+The sql is included already in this dir
+
+Setup a virtual host for basicwebsite.test  to run this project

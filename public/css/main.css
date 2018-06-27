@@ -1,0 +1,164 @@
+
+
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url('../fonts/montserrat/Montserrat-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url('../fonts/montserrat/Montserrat-Medium.ttf'); 
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ Table ]*/
+
+.limiter {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-table100 {
+  width: 100%;
+  min-height: 100vh;
+  background: #9628289a;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 33px 30px;
+}
+
+.wrap-table100 {
+  width: 1300px;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ Table ]*/
+table {
+  width: 100%;
+  background-color: #fff;
+}
+
+th, td {
+  font-weight: unset;
+  padding-right: 10px;
+}
+
+.column100 {
+  width: 130px;
+  padding-left: 25px;
+}
+
+.column100.column3 {
+  width: 5px;
+  padding-left: 62px;
+}
+
+.row100.head th {
+  padding-top: 24px;
+  padding-bottom: 20px;
+}
+
+.row100 td {
+  padding-top: 18px;
+  padding-bottom: 14px;
+}
+
+
+/*==================================================================
+[ Ver1 ]*/
+.table100.ver1 td {
+  font-family: Montserrat-Regular;
+  font-size: 14px;
+  color: #000;
+  line-height: 1.4;
+}
+
+.table100.ver1 th {
+  font-family: Montserrat-Medium;
+  font-size: 12px;
+  color: #fff;
+  line-height: 1.4;
+  text-transform: uppercase;
+  background-color: #061a41e3;
+}
+
+.table100.ver1 .row100:hover {
+  background-color: #105ac250;
+}
+
+
+.table100.ver1 .row100 td:hover {
+  background-color:  #105ac250;
+  color: #000;
+}
+
+/* The container */
+.container1 {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container1 input {
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  left: 90px;
+  height: 25px;
+  width: 25px;
+  background-color: transparent;
+}
+
+/* On mouse-over, add a grey background color */
+.container1:hover input ~ .checkmark {
+  background-color: transparent;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container1 input:checked ~ .checkmark {
+  background-color: transparent;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container1 input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container1 .checkmark:after {
+  left: 1px;
+  width: 15px;
+  height: 25px;
+  border: solid black;
+  border-width: 0 7px 7px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
